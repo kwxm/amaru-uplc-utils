@@ -1,0 +1,23 @@
+[package]
+name = "amaru-uplc-utils"
+version = "0.1.0"
+edition = "2024"
+description = "Utilities for running generated Plutus conformance cases with amaru-uplc"
+license = "Apache-2.0"
+publish = false
+
+[[bin]]
+name = "run-flat"
+path = "src/bin/run_flat.rs"
+
+[[bin]]
+name = "run-uplc"
+path = "src/bin/run_uplc.rs"
+
+[[bin]]
+name = "run-conformance"
+path = "src/bin/run_conformance.rs"
+
+[dependencies]
+amaru-kernel = "0.6.0"
+amaru-uplc = "0.6.0"
